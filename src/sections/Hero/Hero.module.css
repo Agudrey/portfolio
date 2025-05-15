@@ -1,0 +1,11 @@
+.hero_section{
+  background-color: #34353A;
+  height: 88vh;
+  width: 100%;
+  color: white;
+}
+
+.nombre{
+  color: #00d8ff;
+  font-size: 30px;
+}

@@ -1,0 +1,32 @@
+nav{
+  height: 12vh;
+  padding: 0px 40px;
+  background-color: #31333B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar_list_desktop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_list_desktop li{
+  list-style: none;
+  margin: 0px 16px;
+}
+
+.navbar_list_desktop li a{
+  text-decoration: none;
+  color: #ACACAD;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navbar_list_desktop li a:hover{
+  color: #00d8ff;
+}
