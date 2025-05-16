@@ -3,9 +3,75 @@
   height: 88vh;
   width: 100%;
   color: white;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  box-shadow: 0px 4px 8px 0px #000;
 }
 
-.nombre{
+.hero_text_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+}
+
+.name{
   color: #00d8ff;
-  font-size: 30px;
+  font-size: 2rem;
+}
+
+.hero_text_container p{
+  font-size: 1.2rem;
+}
+
+.contact_button{
+  color: #00d8ff;
+  border: 3px solid #00d8ff;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px 32px;
+  text-decoration: none;
+  margin-top: 16px;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact_button:hover{
+  background-color: #00d8ff;
+  color: #34353A;
+  transition: 0.3s;
+}
+
+.hero_contact_links{
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.hero_contact_links::before{
+  content: '';
+  width: 3px;
+  height: 50px;
+  background-color: #00d8ff;
+  margin-bottom: 16px;
+}
+
+.hero_contact_links a{
+  text-decoration: none;
+  color: #ACACAD;
+  font-size: 1.8rem;
+}
+
+.hero_contact_links a:hover{
+  color: #00d8ff;
+  transition: 0.3s;
 }

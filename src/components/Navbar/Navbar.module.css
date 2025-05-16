@@ -1,12 +1,13 @@
 nav{
   height: 12vh;
   padding: 0px 40px;
-  background-color: #31333B;
+  background-color: #34353A;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0px;
+  z-index: 100;
 }
 
 .navbar_list_desktop{
