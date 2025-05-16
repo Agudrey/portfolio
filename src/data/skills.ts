@@ -1,8 +1,9 @@
 import { FaHtml5, FaCss3, FaReact, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiRedux } from "react-icons/si";
+import type { Skill } from "../interfaces/interfaces";
 
-export const skills = [
+export const skills:Skill[] = [
   {
     name: 'HTML',
     icon: FaHtml5,

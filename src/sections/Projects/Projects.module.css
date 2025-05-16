@@ -1,26 +1,28 @@
-.skills_section{
-  background-color: #34353A;
-  padding: 10vh 0;
-  width: 100%;
-  color: white;
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  flex-direction: column;
-  gap: 90px;
-  box-shadow: 0px 4px 8px 0px #000;
+:root {
+  --blue: #00d8ff;
 }
 
-.skills_title{
+.projects_section {
+  background: #30333B url(../../assets/topography.svg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  padding: 10vh 0;
+  width: 100%;
+}
+
+.projects_title {
   font-size: 3rem;
   margin-bottom: 40px;
 }
 
-.skills_grid{
+.projects_grid {
   max-width: 70%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 40px;
 }
