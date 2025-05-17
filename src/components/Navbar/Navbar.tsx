@@ -12,17 +12,22 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const closeMenuToScroll = (id: string) => {
+    clickScroll(id);
+    setIsOpen(false);
+  }
+
   return (
     <nav>
       <img src={reactLogo} alt="logo" />
 
       <ul className={!isOpen? styles.navbar_disable : styles.navbar_list}>
-        <li onClick={() => clickScroll("hero")}>Inicio</li>
-        <li onClick={() => clickScroll("about")}>Sobre mi</li>
-        <li onClick={() => clickScroll("skills")}>Habilidades</li>
-        <li onClick={() => clickScroll("projects")}>Proyectos</li>
-        <li onClick={() => clickScroll("experience")}>Experiencia</li>
-        <li onClick={() => clickScroll("contact")}>Contacto</li>
+        <li onClick={() => closeMenuToScroll("hero")}>Inicio</li>
+        <li onClick={() => closeMenuToScroll("about")}>Sobre mi</li>
+        <li onClick={() => closeMenuToScroll("skills")}>Habilidades</li>
+        <li onClick={() => closeMenuToScroll("projects")}>Proyectos</li>
+        <li onClick={() => closeMenuToScroll("experience")}>Experiencia</li>
+        <li onClick={() => closeMenuToScroll("contact")}>Contacto</li>
       </ul>
 
       <HiMenuAlt3 onClick={clickMenuBurger} className={isOpen? styles.disable : styles.burguer_icon}/>

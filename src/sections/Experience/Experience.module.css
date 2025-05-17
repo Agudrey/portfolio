@@ -84,3 +84,14 @@
   color: #c2c2c2;
   line-height: 1.6;
 }
+
+@media screen and (max-width: 500px) {
+  .timeline {
+    max-width: 70%;
+    margin-left: 50px;
+  }
+
+  .timeline_item {
+    padding-left: 10px;
+  }
+}

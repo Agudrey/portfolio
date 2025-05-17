@@ -1,6 +1,8 @@
+import type { FunctionComponent, SVGProps } from 'react';
+
 export interface Skill {
   name: string,
-  icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>,
+  icon: FunctionComponent<SVGProps<SVGSVGElement>>,
   color: string
 }
 
@@ -18,4 +20,4 @@ export interface ExperienceInfo {
   position: string,
   date: string,
   description: string[]
-} 
+}

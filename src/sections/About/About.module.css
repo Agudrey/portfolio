@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;  
   align-items: center;
+  scroll-margin-top: 100px;
 }
 
 .about_container{
@@ -24,4 +25,10 @@
 .about_text{
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 700px) {
+  .about_container{
+    width: 70%;
+  }  
 }
