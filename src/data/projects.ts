@@ -6,7 +6,7 @@ export const projects:Project[] = [
     description: 'Este es mi portafolio personal, donde muestro mis proyectos y habilidades.',
     image: '../assets/Ideando_image.webp',
     url: 'https://ideandoeventosymarketing.com/',
-    tags: ['React', 'TypeScript', 'CSS']
+    tags: ['React','CSS']
   },
   {
     name: 'Portfolio',

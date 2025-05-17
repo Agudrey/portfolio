@@ -1,16 +1,17 @@
 import styles from './Hero.module.css'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub, FaWhatsapp  } from "react-icons/fa6";
+import { clickScroll } from '../../utils/clickScroll';
 
 function Hero() {
   return (
-    <section className={styles.hero_section}>
+    <section id='hero' className={styles.hero_section}>
       <div className={styles.hero_text_container}>   
         <h1>Soy <span className={styles.name}>Cristian Agudelo</span></h1>
 
         <p>Desarrollador web enfocado en construir sitios responsivos, accesibles y atractivos.</p>
 
-        <button className={styles.contact_button}>Contacto</button>
+        <button onClick={() => clickScroll("contact")} className={styles.contact_button}>Contacto</button>
       </div>
 
       <div className={styles.hero_image_container}>

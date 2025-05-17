@@ -1,6 +1,6 @@
 .hero_section{
   background-color: #34353A;
-  height: 88vh;
+  height: calc(100vh - 100px);
   width: 100%;
   color: white;
   display: flex;
@@ -17,9 +17,14 @@
   width: 25%;
 }
 
-.name{
-  color: #00d8ff;
+.hero_text_container h1{
   font-size: 2rem;
+  font-weight: 700;
+}
+
+.name{
+  color: var(--blue);
+  font-size: 3rem;
 }
 
 .hero_text_container p{
@@ -27,8 +32,8 @@
 }
 
 .contact_button{
-  color: #00d8ff;
-  border: 3px solid #00d8ff;
+  color: var(--blue);
+  border: 3px solid var(--blue);
   background-color: transparent;
   border-radius: 8px;
   padding: 8px 32px;
@@ -40,14 +45,14 @@
 }
 
 .contact_button:hover{
-  background-color: #00d8ff;
+  background-color: var(--blue);
   color: #34353A;
   transition: 0.3s;
 }
 
 .hero_contact_links{
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   right: 60px;
   z-index: 0;
   display: flex;
@@ -61,7 +66,7 @@
   content: '';
   width: 3px;
   height: 50px;
-  background-color: #00d8ff;
+  background-color: var(--blue);
   margin-bottom: 16px;
 }
 
@@ -72,6 +77,6 @@
 }
 
 .hero_contact_links a:hover{
-  color: #00d8ff;
+  color: var(--blue);
   transition: 0.3s;
 }

@@ -11,6 +11,7 @@
   align-items: center;
   padding: 10vh 0;
   width: 100%;
+  scroll-margin-top: 180px;
 }
 
 .projects_title {
