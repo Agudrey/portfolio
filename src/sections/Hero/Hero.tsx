@@ -2,6 +2,7 @@ import styles from './Hero.module.css'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub, FaWhatsapp  } from "react-icons/fa6";
 import { clickScroll } from '../../utils/clickScroll';
+import hero_image from '../../assets/hero_image.webp';
 
 function Hero() {
   return (
@@ -15,7 +16,7 @@ function Hero() {
       </div>
 
       <div className={styles.hero_image_container}>
-        <img className={styles.hero_image} src="/images/hero.png" alt="Cristian Agudelo" />
+        <img className={styles.hero_image} src={hero_image} alt="Cristian Agudelo" />
       </div>
 
       <div className={styles.hero_contact_links}>
