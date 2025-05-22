@@ -94,7 +94,7 @@
 .hero_image{
   width: 100%;
   height: auto;
-  filter: grayscale(100%);
+  filter: drop-shadow(0px 4px 8px var(--blue));
 }
 
 @media screen and (max-width: 880px) {
@@ -106,12 +106,12 @@
 
   .hero_image_container{
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    left: 50%;
+    width: 100%;
     z-index: 0;
   }
 
   .hero_image{
-    filter: grayscale(100%) opacity(0.5);
+    filter: drop-shadow(0px 4px 8px var(--blue)) opacity(0.5);
   }
 }
