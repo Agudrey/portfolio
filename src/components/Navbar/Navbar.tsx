@@ -1,5 +1,5 @@
 import styles from './Navbar.module.css'
-import reactLogo from '../../assets/react.svg'
+import logo from '../../assets/logo.webp'
 import { useState } from 'react'
 import { clickScroll } from '../../utils/clickScroll'
 import { HiMenuAlt3 } from "react-icons/hi";
@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <nav>
-      <img src={reactLogo} alt="logo" />
+      <img src={logo} alt="logo" />
 
       <ul className={!isOpen? styles.navbar_disable : styles.navbar_list}>
         <li onClick={() => closeMenuToScroll("hero")}>Inicio</li>

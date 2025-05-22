@@ -10,6 +10,10 @@ nav{
   z-index: 100;
 }
 
+nav img{
+  height: 80%;
+}
+
 .navbar_list{
   display: flex;
   justify-content: center;
