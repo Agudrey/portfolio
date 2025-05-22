@@ -1,8 +1,8 @@
 import styles from './Hero.module.css'
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub, FaWhatsapp  } from "react-icons/fa6";
 import { clickScroll } from '../../utils/clickScroll';
 import hero_image from '../../assets/hero_image.webp';
+import { contactLinks } from '../../data/contactLinks';
+import type { ContactLinks } from '../../interfaces/interfaces';
 
 function Hero() {
   return (
@@ -20,31 +20,16 @@ function Hero() {
       </div>
 
       <div className={styles.hero_contact_links}>
-        <a 
-          href="https://www.linkedin.com/in/tu-usuario"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Whatsapp"
-        >
-          <FaWhatsapp />
-        </a>
-        <a    
-          href="https://www.linkedin.com/in/cristian-agudelo-b2217b1b4/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedinIn />
-        </a>
-
-        <a 
-          href="https://www.linkedin.com/in/tu-usuario"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Github"
-        >
-          <FaGithub />
-        </a>
+        {contactLinks.map((link:ContactLinks) => 
+          <a 
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.name}
+          >
+            <link.icon />
+          </a>
+        )}
       </div>
     </section>
   )

@@ -21,3 +21,9 @@ export interface ExperienceInfo {
   date: string,
   description: string[]
 }
+
+export interface ContactLinks {
+  name: string,
+  url: string
+  icon: FunctionComponent<SVGProps<SVGSVGElement>>,
+}
